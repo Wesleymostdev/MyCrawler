@@ -32,9 +32,9 @@ public class MyCrawler {
     private static void basic() {
         List<? extends SiteCrawlerAction> siteCrawlerActions = new LinkedList<>();
         SiteCrawler siteCrawler = new SiteCrawler("http://www.yacht.nl", "https://www.yacht.nl", siteCrawlerActions);
+
         siteCrawler.getAllowedSuffixes().add("");
         siteCrawler.navigate();
         siteCrawler.disableCrawling();
-
     }
 }
